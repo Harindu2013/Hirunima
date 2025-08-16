@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="logo.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ SEO Meta Tags -->
+<title>HTR Games Store - Free PC Games Download</title>
+<meta name="description" content="HTR Games Store - Download the best free PC games, action, adventure, shooting, and open-world titles with a neon futuristic gaming design.">
+<meta name="keywords" content="HTR Games Store, free pc games, download games, GTA, Call of Duty, Assassin’s Creed, Minecraft, neon gaming website">
+<meta name="author" content="HTR Games Store">
+
+<!-- ✅ Open Graph -->
+<meta property="og:title" content="HTR Games Store - Free PC Games Download">
+<meta property="og:description" content="Download the best PC games with a neon futuristic design website.">
+<meta property="og:image" content="https://i.ibb.co/7G8FhMq/gaming-banner.jpg">
+<meta property="og:url" content="https://yourgithubusername.github.io/HTR-Games-Store/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* 🌈 Animated Neon Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+  animation: neon-bg 5s linear infinite;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #f0f;
+  z-index: 1000;
+}
+@keyframes neon-bg {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+.navbar h1 {
+  font-size: 26px;
+  color: #fff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #ff0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ff0;
+  text-shadow: 0 0 15px #ff0, 0 0 25px #f0f, 0 0 35px #0ff;
+}
+
+/* Search */
+.search-bar {
+  background: #111;
+  border-radius: 30px;
+  padding: 5px 15px;
+  border: 2px solid #0ff;
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+/* 🌌 Animated Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: url("neonback.jpg") repeat;
+  opacity: 0.3;
+  animation: move-bg 20s linear infinite;
+}
+@keyframes move-bg {
+  0% {background-position:0 0;}
+  100% {background-position:1000px 0;}
+}
+.hero h2 {
+  font-size: 50px;
+  z-index: 1;
+  position: relative;
+  animation: neon-text 2s ease-in-out infinite alternate;
+}
+@keyframes neon-text {
+  from {text-shadow:0 0 10px #f0f,0 0 20px #0ff,0 0 30px #ff0;}
+  to {text-shadow:0 0 25px #0ff,0 0 35px #f0f,0 0 50px #ff0;}
+}
+.hero p {
+  font-size: 20px;
+  color: #ddd;
+  margin-top: 20px;
+  text-shadow:0 0 10px #0ff;
+}
+
+/* 🎮 Games Grid */
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+.game-card {
+  background: linear-gradient(145deg, #1c1c1c, #262626);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #00e5ff, 0 0 25px #ff007f;
+  text-align: center;
+  transition: 0.3s;
+  animation: pulse 3s infinite alternate;
+}
+@keyframes pulse {
+  from {box-shadow:0 0 15px #ff00ff,0 0 25px #00ffff;}
+  to {box-shadow:0 0 30px #00ffff,0 0 50px #ff00ff;}
+}
+.game-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 35px #ff00ff,0 0 55px #00ffff;
+}
+.game-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.game-card h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  text-shadow:0 0 10px #0ff,0 0 20px #f0f,0 0 30px #ff0;
+}
+.game-card button {
+  background: linear-gradient(90deg,#ff00ff,#00ffff,#ff0);
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.game-card button:hover {
+  background: linear-gradient(90deg,#00ffff,#ff0,#ff00ff);
+  color: #fff;
+  box-shadow: 0 0 20px #ff00ff,0 0 35px #00ffff;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #111;
+  box-shadow: inset 0 0 100px rgba(255,0,255,0.3);
+}
+.about h2 {
+  font-size: 36px;
+  text-shadow: 0 0 15px #ff00ff,0 0 25px #00e5ff;
+}
+.about p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0a0a;
+  border-top: 2px solid #0ff;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Particles Animation */
+.particles {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  z-index:-1;
+  pointer-events:none;
+}
+.particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #0ff;
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+  opacity: 0.7;
+}
+@keyframes float {
+  0% {transform:translateY(0) translateX(0);}
+  50% {transform:translateY(-200px) translateX(50px);}
+  100% {transform:translateY(-400px) translateX(-50px);}
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h1>HTR Games Store</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="Games.html">Games</a>
+    <a href="About.html">About</a>
+  </div>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search games...">
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h2>Welcome to HTR Games Store</h2>
+  <p>Download the best PC games with a neon futuristic gaming experience!</p>
+</section>
+
+<!-- Games Section -->
+<section id="games">
+  <h2 style="text-align:center; padding:20px;">🎮 Popular Games 🎮</h2>
+  <div class="games-container" id="gamesList">
+    <div class="game-card">
+      <img src="Call_of_Duty_4_Modern_Warfare.jpg"  alt="Call of Duty">
+      <h3>Call of Duty 4 Modern Warfare 1</h3>
+      <button>Download</button>
+    </div>
+    <div class="game-card">
+      <img src="a3.jpg" alt="Assassin's Creed">
+      <h3>Assassin’s Creed III</h3>
+      <button> Download</button>
+    </div>
+    <div class="game-card">
+      <img src="GTASABOX.jpg " width="20px" alt="GTA San Andreas">
+      <h3>GTA San Andreas</h3>
+      <a href="">
+      <button>Download</button>
+      </a>
+    </div>
+    <div class="game-card">
+      <img src="unnamed.png" alt="Minecraft">
+      <h3>Minecraft</h3>
+      <button>Download</button>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <h2>About HTR Games Store</h2>
+  <p>HTR Games Store is your ultimate destination for downloading top-quality PC games for free. From action to adventure, open-world to strategy, we bring the best gaming experience with a futuristic neon design. Our mission is to build a hub for gamers worldwide to connect and enjoy!</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 HTR Games Store | All Rights Reserved</p>
+
+<!-- Particles -->
+<div class="particles" id="particles"></div>
+
+<!-- JS -->
+<script>
+// Search Filter
+const searchInput = document.getElementById("searchInput");
+const gamesList = document.getElementById("gamesList");
+const games = gamesList.getElementsByClassName("game-card");
+
+searchInput.addEventListener("keyup", function() {
+  let filter = searchInput.value.toLowerCase();
+  for (let i = 0; i < games.length; i++) {
+    let title = games[i].getElementsByTagName("h3")[0];
+    if (title.innerHTML.toLowerCase().indexOf(filter) > -1) {
+      games[i].style.display = "";
+    } else {
+      games[i].style.display = "none";
+    }
+  }
+});
+
+// 🌟 Neon Particles
+const particlesContainer = document.getElementById("particles");
+for(let i=0;i<80;i++){
+  const p = document.createElement("div");
+  p.classList.add("particle");
+  p.style.left = Math.random()*100+"%";
+  p.style.top = Math.random()*100+"%";
+  p.style.width = Math.random()*4+2+"px";
+  p.style.height = p.style.width;
+  p.style.animationDuration = 5+Math.random()*10+"s";
+  p.style.background = `hsl(${Math.random()*360}, 100%, 50%)`;
+  particlesContainer.appendChild(p);
+}
+</script>
+
+</body>
+</html>
